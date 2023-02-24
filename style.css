@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Righteous', cursive;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+a:hover{
+    color: #242424;
+}
+.container{
+    padding: 0;
+    border: 1px solid #242424;
+    border-top: none;
+    border-bottom: none;
+}
+.header{
+    padding: 20px;
+    border: 1px solid #242424;
+    border-right: none;
+    border-left: none;
+}
+.head-wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+
+
+.topOne{
+    position: relative;
+    height: 600px;
+}
+.title{
+    /* BEAUTY IN SIMPLICITY */
+    width: 764px;
+    font-weight: 400;
+    height: 336px;
+    line-height: 92.5%;
+    font-size: 140px;
+}
+.mainImgContainer{
+    z-index: -1;
+    position: absolute;
+    left: 17%;
+    top: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 911px;
+    height: 448px;
+    border: 1px solid #242424;
+    border-radius: 300px;
+
+}
+.mainImg{
+    width: 872px;
+    height: 414px;
+    border-radius: 300px;
+}
+.top-one-wrapper{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+.topTwo{
+    display: flex;
+}
+
+
+.left{
+    border-right: 1px solid #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    margin-top: 10px;
+}
+.serviceImg{
+width: 247px;
+height: 246px;
+border-radius: 50%;
+margin-top: 20px;
+}
+
+.our-service{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.right{
+    padding: 30px;
+    width: 75%;
+}
+.rightTop{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-img{
+    width: 605px;
+    height: 287px;
+    object-fit:cover;
+    border-radius: 300px;
+}
+
+.btn{
+    margin: 10px;
+    width: 293px;
+    height: 67px;
+    border-radius: 100px;
+    border: 1px solid #242424;
+    color: #242424;
+}
+
+
+
+.rightBottom{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+    height:600px;
+}
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.text{  
+    text-align: center;
+    width: 20%;
+    transform: rotate(-90deg);
+}
+.para{
+    width: 80%;
+}
