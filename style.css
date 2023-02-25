@@ -24,6 +24,9 @@ a{
 a:hover{
     color: #242424;
 }
+.small-res{
+    display: none;
+}
 
 
                     /* CONTAINER THAT HOLDS EVERY SECTIONS */
@@ -94,18 +97,21 @@ a:hover{
 
 
 .topTwo{
+    width: 100%;
     display: flex;
 }
-
+.service-img-conatiner  {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
 .left{
     border-right: 1px solid #242424;
     display: flex;
     align-items: center;
-    justify-content: start;
+    /* justify-content: space-around; */
     flex-direction: column;
     width: 35%;
-    margin-top: 10px;
 }
 .serviceImg{
     width: 15vw;
@@ -117,6 +123,9 @@ a:hover{
     border: 1px solid #242424;
     border-radius: 50%;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .our-service{
@@ -172,6 +181,9 @@ a:hover{
     position: relative;
     border-radius: 300px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -243,6 +255,7 @@ a:hover{
 
 
 .projects{
+    max-height:600px;
     min-height: 490px;
     width: 100%;
     border-bottom: 1px solid #242424;
@@ -479,3 +492,245 @@ footer{
 }
 
 
+
+                    /* MEDIA QUERIES */
+
+/* Large */
+@media(width<1200px){
+
+}
+/* medium */
+@media(width<992px){
+
+}
+/* small */
+@media(width<768px){
+ .social{
+    display: none;
+ }
+ .head-wrapper{
+    justify-content: center;
+ }
+ .mainImgContainer{
+    margin: auto;
+    margin-top: 50px;
+    position: static;
+    width: 90%;
+    border-radius: 18px;
+
+ }
+ .top-one{
+    width: 100%;
+    position: relative;
+ }
+ .title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+ }
+ .review-title,.review-para{
+    color: #ffffff;
+ }
+ .mainImg{
+    z-index: -1;
+    position: relative;
+    border-radius:18px ;
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+
+ }
+
+ .review{
+    position: absolute;
+    bottom: 5px;
+    right: 70px;
+ }
+
+
+
+
+
+
+
+ .topTwo{
+    margin-top: 30px;
+    flex-direction: column-reverse;
+ }
+ .left{
+    border: none;
+    width: 100%; 
+    flex-direction: column-reverse;
+ }
+ .right{
+    padding: 10px;
+    width: 100%;
+ }
+ .rightTop{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+ }
+ .rightBottom{
+    height: 530px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+ }
+ .text-container{
+    padding: 30px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+ }
+ .text{
+    transform: rotate(0deg);
+    width: 100%;
+    text-align:start;
+ }
+ .para{
+    width: 100%;
+    text-align:start;
+ }
+ .our-team-img-box{
+    width: 90%;
+    border-radius: 18px;
+
+ }
+ .our-team-img{
+    border-radius:18px ;
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+
+ }
+ .service-img-conatiner{
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ .serviceImg{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+}
+.our-service{
+    margin: 0;
+}
+.our-service-container{
+  width: 100%;
+  padding: 30px;
+}
+
+
+
+
+.vision{
+    padding: 0;
+}
+.vision-text-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.vision-title{
+    width: 100%;
+}
+.vision-para{
+    width: 100%;
+}
+.vision-img-container{
+    margin-bottom: 10px;
+}
+.visionImg{
+    height: 50vw;
+}
+
+
+
+
+
+
+.projects{
+    flex-direction: column;
+}
+.project-text-container{
+    width: 100%;
+}
+.large-res{
+    display: none;
+}
+.project-img-container{
+    position: relative;
+    width: 100%;
+}
+.small-res{
+    position: absolute;
+    display:block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+.bigClients{
+    flex-direction: column;
+    gap: 10px;
+}
+.big-title{
+    width: 100%;
+}
+.big-para{
+    width: 100%;
+}
+
+
+.contact{
+    flex-direction: column;
+}
+.form-wrapper{
+    width: 100%;
+    border: none;
+}
+.links-wrapper{
+    width: 100%;
+}
+.form{
+justify-content: center;
+align-items: center;
+}
+.form-text-container{
+    width: 100%;
+}
+.form-btn-container {
+    text-align: center;
+}
+
+.btn{
+    margin: 10px;
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.links:last-child{
+    border-bottom:none;
+}
+
+footer{
+    font-size: 10px;
+    border-top: none;
+    margin-bottom: 0;
+}
+}
+/* extra small */
+@media(width<576px){
+
+}
