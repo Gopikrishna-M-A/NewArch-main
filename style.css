@@ -669,6 +669,7 @@ footer{
     display: none;
 }
 .project-img-container{
+    height: 300px;
     position: relative;
     width: 100%;
 }
