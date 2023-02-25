@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
 
-
+:root{
+  --bg: #242424;
+  --color: #ffffff; 
+}
+.hide{
+    display: none;
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #242424;
+    color: var(--color);
 }
-
+body{
+    background-color: var(--bg);
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Righteous', cursive;
 }
@@ -18,7 +26,7 @@ h4{
 }
 a{
     text-decoration: none;
-    color: #5a5a5a;
+    color: var(--color);
 
 }
 a:hover{
@@ -34,7 +42,7 @@ a:hover{
 
 .container{
     padding: 0;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     border-top: none;
     border-bottom: none;
 }
@@ -43,7 +51,7 @@ a:hover{
                           /* HEADER SECTION */
 .header{
     padding: 20px;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     border-right: none;
     border-left: none;
 }
@@ -80,7 +88,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     border-radius: 300px;
 
 }
@@ -106,7 +114,7 @@ a:hover{
 }
 
 .left{
-    border-right: 1px solid #242424;
+    border-right: 1px solid var(--color);
     display: flex;
     align-items: center;
     /* justify-content: space-around; */
@@ -120,7 +128,7 @@ a:hover{
 }
 .service-img-box{
     margin-top: 20px;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     border-radius: 50%;
     padding: 10px;
     display: flex;
@@ -135,13 +143,18 @@ a:hover{
 .right{
     padding: 30px;
     width: 75%;
+
+    
 }
 .rightTop{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    gap: 10px;
     margin-bottom: 30px;
+
+
 }
 .about-btn-container{
     margin-top: 20px;
@@ -177,7 +190,7 @@ a:hover{
     justify-content: center;
 }
 .our-team-img-box{
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     position: relative;
     border-radius: 300px;
     padding: 10px;
@@ -188,7 +201,7 @@ a:hover{
 }
 
 .our-team-title{
-    color: white;
+    color: #ffffff;
     position: absolute;
 }
 
@@ -222,7 +235,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     padding: 50px 0;
     border-left:none ;
     border-right:none ;
@@ -258,7 +271,7 @@ a:hover{
     max-height:600px;
     min-height: 490px;
     width: 100%;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
     display: flex;
 }
 .project-img{
@@ -267,7 +280,7 @@ a:hover{
 .projectDisplay{
     width: 100%;
     height: 100%;
-    border: 1px solid #6F6F6F;
+    border: 1px solid var(--color);
     object-fit: cover;
     border-top:none ;
     border-bottom:none ;
@@ -300,7 +313,7 @@ a:hover{
 
 .bigClients{
     width: 100%;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
     display: flex;
     padding: 30px;
 }
@@ -320,7 +333,7 @@ a:hover{
 
 .clientLogo{
     width: 100%;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
 }
 .client-logo-img-container{
     width: 100%;
@@ -345,7 +358,7 @@ a:hover{
 
 .bigBtn{
     width: 100%;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
     padding: 50px;
     display: flex;
     align-items: center;
@@ -360,11 +373,11 @@ a:hover{
 .contact{
     width: 100%;
     display: flex;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
 }
 .form-wrapper{
     width: 50%;
-    border-right: 1px solid #242424;
+    border-right: 1px solid var(--color);
     padding: 50px;
 }
 
@@ -381,7 +394,7 @@ a:hover{
     width: 100%;
     padding-top:2.5%;
     padding-bottom:2.5%;
-    border: 1px solid #242424;
+    border: 1px solid var(--color);
     border-radius: 60px;
     margin-top: 10px;
     padding-left: 20px;
@@ -407,11 +420,11 @@ a:hover{
     text-align: center;
     width: 100%;
     padding: 30px;
-    border-top:1px solid #242424;
+    border-top:1px solid var(--color);
 }
 
 .links:last-child{
-    border-bottom:1px solid #242424;
+    border-bottom:1px solid var(--color);
 }
 
 
@@ -424,7 +437,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 30px;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--color);
     margin-bottom: 20px;
 }
 
@@ -438,43 +451,43 @@ footer{
     width: 30%;
     padding: 1rem 0.75rem;
     border-radius: 100px;
-    border: 1px solid #242424;
-    color: #242424;
+    border: 1px solid var(--color);
+    color: var(--color);
     text-align: center;
 }
 
 .consultBtn{
-    background-color: #242424;
-    color: white;
+    background-color: var(--color);
+    color: var(--bg);
     transition: all .5s ease-in-out;
 }
 .consultBtn:hover{
-    border: 1px solid #242424;
-    color: #242424;
+    border: 1px solid var(--color);
+    color: var(--color);
 }
 
 .ProjectBtn{
-    background-color: #ffffff;
-    color: #242424;
+    background-color: var(--bg);
+    color: var(--color);
     transition: all .5s ease-in-out;
 }
 .ProjectBtn:hover{
-    background-color: #242424;
-    border: 1px solid #242424;
-    color: #ffffff;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    color: var(--bg);
 }
 
 .startProject{
     font-size: 2vw;
     width: 75%;
-    background-color: #ffffff;
-    color: #242424;
+    background-color: var(--bg);
+    color: var(--color);
     transition: all .5s ease-in-out;
 }
 .startProject:hover{
-    background-color: #242424;
-    border: 1px solid #242424;
-    color: #ffffff;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    color:var(--bg);
 }
 
 
@@ -482,13 +495,13 @@ footer{
     padding: 0;
     width: 130px;
     height: 45px;
-    background-color: #242424;
-    color: white;
+    background-color: var(--color);
+    color: var(--bg);
     transition: all .5s ease-in-out;
 }
 .submitBtn:hover{
-    border: 1px solid #242424;
-    color: #242424;
+    border: 1px solid var(--color);
+    color:var(--color);
 }
 
 
@@ -512,7 +525,10 @@ footer{
     display: none;
  }
  .head-wrapper{
-    justify-content: center;
+    justify-content: space-between;
+ }
+ .mode{ 
+   margin-left: auto;
  }
  .mainImgContainer{
     margin: auto;
@@ -532,7 +548,7 @@ footer{
     top: 10px;
  }
  .review-title,.review-para{
-    color: #ffffff;
+    color:  #ffffff;
  }
  .mainImg{
     z-index: -1;
@@ -567,11 +583,14 @@ footer{
  }
  .right{
     padding: 10px;
+    padding-bottom: 50px;
     width: 100%;
+    border-bottom: 1px solid var(--color);
  }
  .rightTop{
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color);
  }
  .rightBottom{
     height: 530px;
@@ -583,6 +602,7 @@ footer{
     padding: 30px;
     padding-top: 0;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -696,6 +716,16 @@ footer{
 }
 
 
+.bigBtn {
+    padding: 20px;
+}
+.client-logo-small{
+    display: none;
+}
+.client-logo-img-box{
+    padding: 25px 0;
+}
+
 .contact{
     flex-direction: column;
 }
@@ -718,9 +748,10 @@ align-items: center;
 }
 
 .btn{
+    font-size: 13px;
     margin: 10px;
-    width: 200px;
-    padding: 5px 10px;
+    width: 210px;
+    padding: 5px 7px;
     border-radius: 50px;
 }
 
