@@ -506,6 +506,18 @@ footer{
 
 
 
+
+                        /* IMAGES HOVER */
+                      
+
+
+
+
+
+
+
+
+
                     /* MEDIA QUERIES */
 
 /* Large */
@@ -536,6 +548,7 @@ footer{
     position: static;
     width: 90%;
     border-radius: 18px;
+    padding: 5px;
 
  }
  .top-one{
@@ -582,12 +595,15 @@ footer{
     flex-direction: column-reverse;
  }
  .right{
-    padding: 10px;
+    padding: 0;
+    padding-top:10px;
     padding-bottom: 50px;
     width: 100%;
     border-bottom: 1px solid var(--color);
  }
  .rightTop{
+    width: 100%;
+    padding: 30px;
     padding-bottom: 40px;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--color);
@@ -620,6 +636,7 @@ footer{
  .our-team-img-box{
     width: 90%;
     border-radius: 18px;
+    padding: 5px;
 
  }
  .our-team-img{
@@ -649,7 +666,9 @@ footer{
   width: 100%;
   padding: 30px;
 }
-
+.service-img-box{
+    padding: 5px;
+}
 
 
 
