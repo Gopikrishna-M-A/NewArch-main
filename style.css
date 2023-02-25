@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Righteous', cursive;
 }
 h4{
-    font-size: 50px;
+    font-size: 3vw;
 }
 a{
     text-decoration: none;
@@ -60,21 +60,19 @@ a:hover{
 
 .topOne{
     position: relative;
-    height: 600px;
+    height: 42vw;
 }
 .title{
     /* BEAUTY IN SIMPLICITY */
-    width: 764px;
-    font-weight: 400;
-    height: 336px;
+    width: 65vw;
     line-height: 92.5%;
-    font-size: 140px;
+    font-size:10vw;
 }
 .mainImgContainer{
     z-index: -1;
     position: absolute;
     left: 17%;
-    top: 165px;
+    top: 12vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,8 +82,8 @@ a:hover{
 
 }
 .mainImg{
-    width: 872px;
-    height: 414px;
+    width: 60vw;
+    height: 30vw;
     border-radius: 300px;
 }
 .top-one-wrapper{
@@ -104,14 +102,14 @@ a:hover{
     border-right: 1px solid #242424;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     width: 35%;
     margin-top: 10px;
 }
 .serviceImg{
-    width: 246px;
-    height: 246px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
 }
 .service-img-box{
@@ -136,21 +134,14 @@ a:hover{
     padding: 20px;
     margin-bottom: 30px;
 }
-.btn-container{
+.about-btn-container{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn{
-    margin: 10px;
-    width: 293px;
-    height: 67px;
-    border-radius: 100px;
-    border: 1px solid #242424;
-    color: #242424;
-}
 
 
 
@@ -164,8 +155,8 @@ a:hover{
     height:600px;
 }
 .our-team-img{
-    width: 605px;
-    height: 287px;
+    width: 43vw;
+    height: 22vw;
     object-fit:cover;
     border-radius: 300px;
 }
@@ -226,7 +217,7 @@ a:hover{
 }
 .visionImg{
     width: 100%;
-    height: 427px;
+    height: 30vw;
     object-fit: cover;
 }
 .vision-img-container{
@@ -252,35 +243,43 @@ a:hover{
 
 
 .projects{
+    min-height: 490px;
+    width: 100%;
     border-bottom: 1px solid #242424;
     display: flex;
 }
+.project-img{
+    width: 25%;
+}
 .projectDisplay{
-    width: 167px;
-    height: 621px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #6F6F6F;
     object-fit: cover;
     border-top:none ;
     border-bottom:none ;
 }
 .project-img-container{
+    width: 50%;
     display: flex;
 }
 .project-text-container{
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
-.projectBtn{
+.project-text-container .ProjectBtn{
     margin:auto;    
 }
 .project-title{
-    margin:0 auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 .project-para{
-    width: 50%;
-    margin:0 auto;
+    width: 90%;
+
+    margin-bottom: 20px;
 }
 
 
@@ -310,7 +309,7 @@ a:hover{
     width: 100%;
     border-bottom: 1px solid #242424;
 }
-.client-ogo-img-container{
+.client-logo-img-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -319,32 +318,13 @@ a:hover{
 }
 
 .client-logo-Img{
-    width: 327px;
-    height: 191px;
+    width: 22vw;
+    height: 13vw;
     object-fit: cover;
 }
 
-.client-logo-img-box:nth-child(n){
-    border-right: 1px solid #242424;
-}
-.client-logo-img-box:nth-child(4){
-    border-right:none;
-}
-.client-logo-img-box:nth-child(8){
-    border-right:none;
-}
-.client-logo-img-box:nth-child(5){
-    border-top: 1px solid #242424;
-}
-.client-logo-img-box:nth-child(6){
-    border-top: 1px solid #242424;
-}
-.client-logo-img-box:nth-child(7){
-    border-top: 1px solid #242424;
-}
-.client-logo-img-box:nth-child(8){
-    border-top: 1px solid #242424;
-}
+
+
 
 
                                     /* START PROJECT BUTTON SECTION */
@@ -384,9 +364,10 @@ a:hover{
     width: 60%;
 }
 .form-input{
+    min-width:200px;
     width: 100%;
-    width: 413px;
-    height: 53px;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
     border: 1px solid #242424;
     border-radius: 60px;
     margin-top: 10px;
@@ -433,3 +414,68 @@ footer{
     border-bottom: 1px solid #242424;
     margin-bottom: 20px;
 }
+
+
+
+
+                    /* BUTTONS */
+
+.btn{
+    margin: 10px;
+    width: 30%;
+    padding: 1rem 0.75rem;
+    border-radius: 100px;
+    border: 1px solid #242424;
+    color: #242424;
+    text-align: center;
+}
+
+.consultBtn{
+    background-color: #242424;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+.consultBtn:hover{
+    border: 1px solid #242424;
+    color: #242424;
+}
+
+.ProjectBtn{
+    background-color: #ffffff;
+    color: #242424;
+    transition: all .5s ease-in-out;
+}
+.ProjectBtn:hover{
+    background-color: #242424;
+    border: 1px solid #242424;
+    color: #ffffff;
+}
+
+.startProject{
+    font-size: 2vw;
+    width: 75%;
+    background-color: #ffffff;
+    color: #242424;
+    transition: all .5s ease-in-out;
+}
+.startProject:hover{
+    background-color: #242424;
+    border: 1px solid #242424;
+    color: #ffffff;
+}
+
+
+.submitBtn{
+    padding: 0;
+    width: 130px;
+    height: 45px;
+    background-color: #242424;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+.submitBtn:hover{
+    border: 1px solid #242424;
+    color: #242424;
+}
+
+
