@@ -505,6 +505,9 @@ footer{
 }
 /* small */
 @media(width<768px){
+    h4{
+        font-size: 22px;
+    }
  .social{
     display: none;
  }
