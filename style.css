@@ -24,12 +24,20 @@ a{
 a:hover{
     color: #242424;
 }
+
+
+                    /* CONTAINER THAT HOLDS EVERY SECTIONS */
+
+
 .container{
     padding: 0;
     border: 1px solid #242424;
     border-top: none;
     border-bottom: none;
 }
+
+
+                          /* HEADER SECTION */
 .header{
     padding: 20px;
     border: 1px solid #242424;
@@ -42,6 +50,11 @@ a:hover{
     align-items: center;
 }
 
+
+
+
+
+                        /* TOP SECTION */
 
 
 
@@ -65,8 +78,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 911px;
-    height: 448px;
+    padding: 10px;
     border: 1px solid #242424;
     border-radius: 300px;
 
@@ -98,12 +110,17 @@ a:hover{
     margin-top: 10px;
 }
 .serviceImg{
-width: 247px;
-height: 246px;
-border-radius: 50%;
-margin-top: 20px;
+    width: 246px;
+    height: 246px;
+    border-radius: 50%;
 }
+.service-img-box{
+    margin-top: 20px;
+    border: 1px solid #242424;
+    border-radius: 50%;
+    padding: 10px;
 
+}
 .our-service{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -124,12 +141,6 @@ margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.team-img{
-    width: 605px;
-    height: 287px;
-    object-fit:cover;
-    border-radius: 300px;
 }
 
 .btn{
@@ -152,6 +163,33 @@ margin-top: 20px;
     margin-bottom: 30px;
     height:600px;
 }
+.our-team-img{
+    width: 605px;
+    height: 287px;
+    object-fit:cover;
+    border-radius: 300px;
+}
+
+.our-team-img-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-team-img-box{
+    border: 1px solid #242424;
+    position: relative;
+    border-radius: 300px;
+    padding: 10px;
+
+}
+
+.our-team-title{
+    color: white;
+    position: absolute;
+}
+
+
 .text-container{
     display: flex;
     align-items: center;
@@ -166,6 +204,12 @@ margin-top: 20px;
 .para{
     width: 80%;
 }
+
+
+
+
+
+                    /* VISION SECTION */
 
 
 
@@ -201,6 +245,12 @@ margin-top: 20px;
 .vision-title{
     width: 50%;
 }
+
+
+
+                /* PROJECT SECTION */
+
+
 .projects{
     border-bottom: 1px solid #242424;
     display: flex;
@@ -233,6 +283,9 @@ margin-top: 20px;
     margin:0 auto;
 }
 
+
+                    /* CLIENTS SECTIONS */
+
 .bigClients{
     width: 100%;
     border-bottom: 1px solid #242424;
@@ -250,6 +303,7 @@ margin-top: 20px;
 }
 
 
+                    /* CLIENTS LOGO SECTION */
 
 
 .clientLogo{
@@ -293,6 +347,9 @@ margin-top: 20px;
 }
 
 
+                                    /* START PROJECT BUTTON SECTION */
+
+
 .bigBtn{
     width: 100%;
     border-bottom: 1px solid #242424;
@@ -301,6 +358,11 @@ margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+                                        /* CONTACT SECTION */
 
 .contact{
     width: 100%;
@@ -359,6 +421,8 @@ margin-top: 20px;
 }
 
 
+
+                                /* FOOTER SECTION */
 
 
 footer{
