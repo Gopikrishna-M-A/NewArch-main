@@ -690,7 +690,9 @@ footer{
 }
 /* small */
 @media(width<768px){
-
+    body{
+        padding:0;
+    }
     hr{
         display: none;
     }
