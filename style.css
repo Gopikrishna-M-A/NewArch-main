@@ -895,6 +895,9 @@ footer{
 .project-text-container{
     width: 100%;
 }
+.project-para {
+    width: 100%;
+}
 .large-res{
     display: none;
 }
@@ -983,15 +986,38 @@ align-items: center;
 }
 
 
+
 footer{
-    font-size: 10px;
+    font-size: 10%;
     border-top: none;
     margin-bottom: 0;
 }
 }
 /* extra small */
 @media(width<576px){
-
+    .rightTop{
+        padding: 0;
+     }
+    .about-btn-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-top-title{
+        padding-left: 30px;
+        padding-right: 30px;
+     }
+     .right-top-para{
+        padding-left: 30px;
+        padding-right: 30px;
+     }
+    .about-btn-container .ProjectBtn{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .about-btn-container .consultBtn {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
 
 
