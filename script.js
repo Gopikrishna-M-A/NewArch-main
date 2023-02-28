@@ -13,11 +13,11 @@ modeElems.forEach(mode => {
             moon.classList.toggle("hide")
             if(e.target.classList.contains("fa-sun")){
                 r.style.setProperty('--bg', '#ffffff');
-                r.style.setProperty('--color', '#242424');
+                r.style.setProperty('--color', '#171717');
             }
             if(e.target.classList.contains("fa-moon")){
                 r.style.setProperty('--color', '#ffffff');
-                r.style.setProperty('--bg', '#242424');
+                r.style.setProperty('--bg', '#171717');
             }
       
         })
