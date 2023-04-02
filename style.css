@@ -1080,7 +1080,8 @@ footer{
         margin-bottom: 10px;
     }
     footer{
-        font-size: 10px
+        font-size: 10px;
+        padding: 7px;
     }
 }
 
