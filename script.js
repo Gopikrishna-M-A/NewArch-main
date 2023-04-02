@@ -46,12 +46,31 @@ modeElems.forEach(mode => {
     // video player settings
 
 
-        let clip = document.getElementById("videoplayer")
+        //let clip = document.getElementById("videoplayer")
 
-        clip.addEventListener("mouseover", function (e) {
-            clip.play();
-        })
+        // clip.addEventListener("mouseover", function (e) {
+        //     clip.play();
+        // })
   
-        clip.addEventListener("mouseout", function (e) {
-            clip.pause();
-        })
+        // clip.addEventListener("mouseout", function (e) {
+        //     clip.pause();
+        // })
+
+        
+        function playVisibleVideos() {
+            document.querySelectorAll("#videoplayer").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
+          }
+          
+          function elementIsVisible(el) {
+            let rect = el.getBoundingClientRect();
+            return (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth));
+          }
+          
+          let playVisibleVideosTimeout;
+          window.addEventListener("scroll", () => {
+            clearTimeout(playVisibleVideosTimeout);
+            playVisibleVideosTimeout = setTimeout(playVisibleVideos, 100);
+          }, {passive: true});
+          
+          window.addEventListener("resize", playVisibleVideos);
+          window.addEventListener("DOMContentLoaded", playVisibleVideos);

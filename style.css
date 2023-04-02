@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 @font-face {
@@ -9,10 +10,6 @@
     font-family: 'Silver Streak regular';
     src: url('silverstreak-regular.otf') format('truetype');
   }
-  
-
-
-
 
 
 
@@ -21,6 +18,7 @@
   --color: #171717; 
   --border:#6F6F6F;
   --fade:#6F6F6F;
+  --transparent:rgba(196, 196, 196, 0.33);
 }
 .hide{
     display: none;
@@ -150,8 +148,8 @@ hr{
 }
 .mainImg{
     width: 60vw;
-    height: 30vw;
-    border-radius: 300px;
+    aspect-ratio: 1/.5;
+    border-radius: inherit;
     object-fit: cover;
 }
 .top-one-wrapper{
@@ -515,17 +513,22 @@ hr{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
+.client-logo-img-box{
+    min-width: 18rem;
+    max-width: 18rem;
+    
+}
 .client-logo-Img{
-    width: 22vw;
-    height: 13vw;
     object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/.5;
 }
-
-
-
+.client-logo-img-container::-webkit-scrollbar {
+    display: none;
+  }
 
 
                                     /* START PROJECT BUTTON SECTION */
@@ -749,12 +752,20 @@ footer{
 /* Large */
 @media(width<1200px){
 
+    
 }
 /* medium */
 @media(width<992px){
      .review-para{
         font-size: 1.4vw;
      }
+     .client-logo-img-container{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: start;
+        padding: 1rem;
+    }
+    
 }
 /* small */
 @media(width<768px){
@@ -795,15 +806,13 @@ footer{
     margin: 50px auto 10px auto;
     position: static;
     width: 90%;
+    aspect-ratio: 1/0.5;
     border-radius: 18px;
     padding: 5px;
-
  }
 
  .mainImg{
-    border-radius:18px ;
     width: 100%;
-    height: 40vw;
     object-fit: cover;
 
  }
@@ -980,9 +989,17 @@ footer{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    
 }
 
-
+.ProjectBtn.small-res{
+    padding: 10px;
+    background-color: #dddddda8;
+    color: #000;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    width: 90%;
+}
 
 
 .bigClients{
@@ -1004,7 +1021,8 @@ footer{
     display: none;
 }
 .client-logo-img-box{
-    padding: 25px 0;
+    /* padding: 25px 0; */
+    min-width: 15rem;
 }
 
 .contact{
@@ -1064,6 +1082,9 @@ footer{
 }
 /* extra small */
 @media(width<576px){
+    .mainImgContainer{
+        border-radius: 5px;
+     }
     .rightTop{
         padding: 0;
      }
@@ -1091,10 +1112,16 @@ footer{
         font-size: 10px;
         padding: 7px;
     }
+    .content-details h3{
+        font-size: 10px;
+      }
 }
 
-
-
+@media(width<360px){
+    .content-details h3{
+        font-size: 7px;
+      }
+}
 
 
 
@@ -1139,13 +1166,12 @@ footer{
     color: #fff;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    font-size: 1.5em;
+   
   }
   
 
   .our-team h3{
         font-size: 3em;
-    
   }
 
 
