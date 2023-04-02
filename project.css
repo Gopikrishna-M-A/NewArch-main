@@ -75,6 +75,10 @@ h1 {
 .item--full {
   grid-column-end: auto;
 }
+.project-title{
+  text-align: center;
+  padding: 2rem;
+}
 @media screen and (min-width: 768px) {
   .item--full {
     grid-column: 1/-1;

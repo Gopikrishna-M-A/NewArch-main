@@ -43,7 +43,7 @@ body{
     padding-right:5vw ;
     background-color: var(--bg);
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,h4 a{
     font-family: 'Silver Streak regular', sans-serif;
 }
 h4{
@@ -724,6 +724,15 @@ footer{
 .fa-envelope:hover{
     color: #DB4437;
     filter: drop-shadow(0 0 0.75rem  #DB4437);
+}
+
+.fa-linkedin:hover{
+    color: #0072b1;
+    filter: drop-shadow(0 0 0.75rem #0072b1);
+}
+.fa-twitter:hover{
+    color: #00acee ;
+    filter: drop-shadow(0 0 0.75rem  #00acee x  );
 }
                         /* IMAGES HOVER */
                       
