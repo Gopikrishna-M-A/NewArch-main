@@ -14,8 +14,8 @@
 
 
 :root{
-  --bg: rgb(255, 255, 255);
-  --color: #171717; 
+  --bg: #171717 ;
+  --color: rgb(255, 255, 255); 
   --border:#6F6F6F;
   --fade:#6F6F6F;
   --transparent:rgba(196, 196, 196, 0.33);
